@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Продажа пневмоподвесок</title>
+  </head>
+  <body>
+    <!-- Навбар -->
+    <nav>
+      <div>
+        <!-- Здесь можно добавить логотип или другие элементы навигации -->
+      </div>
+      <div class="cart">
+        <p id="cart-count">0 товаров</p>
+        <button class="cartbtn" onclick="openModal()">
+          <img src="./assets/cart.png" alt="" />
+        </button>
+      </div>
+    </nav>
+
+    <!-- Хедер -->
+    <header>
+      <h1>Пневмоподвески высокого качества</h1>
+      <p>Улучшите комфорт и управляемость вашего транспорта</p>
+    </header>
+
+    <section class="carmod">
+      <h2>Наши товары</h2>
+
+      <!-- Модели автомобилей -->
+      <div class="car-model" id="gaz">
+        <img
+          class="model-title"
+          onclick="toggleProductList('product-list-1')"
+          src="./assets/gazbig.png"
+          alt="gaz"
+        />
+
+        <div class="product-list" id="product-list-1">
+          <!-- Карточка товара 1 -->
+          <div>
+            <img src="путь_к_картинке_товара1_модель1.jpg" alt="Товар 1" />
+            <h3>Название товара 1</h3>
+            <p>
+              Описание товара 1. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $100</p>
+            <button onclick="addToCart('Товар 1', 100)">Купить</button>
+          </div>
+          <!-- Карточка товара 2 -->
+          <div>
+            <img src="путь_к_картинке_товара2_модель1.jpg" alt="Товар 2" />
+            <h3>Название товара 2</h3>
+            <p>
+              Описание товара 2. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $120</p>
+            <button onclick="addToCart('Товар 2', 120)">Купить</button>
+          </div>
+          <!-- Добавьте другие карточки товаров по аналогии -->
+        </div>
+      </div>
+
+      <!-- Повторите блок с моделью и карточками для каждой модели -->
+      <!-- Пример для второй модели -->
+      <div class="car-model" id="kamaz">
+        <img
+          class="model-title"
+          onclick="toggleProductList('product-list-2')"
+          src="./assets/kamaz1.png"
+          alt="kamaz"
+        />
+        <div class="product-list" id="product-list-2">
+          <!-- Карточка товара 1 -->
+          <div>
+            <img src="путь_к_картинке_товара1_модель2.jpg" alt="Товар 1" />
+            <h3>Название товара 3</h3>
+            <p>
+              Описание товара 1. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $100</p>
+            <button onclick="addToCart('Товар 1', 100)">Купить</button>
+          </div>
+          <!-- Карточка товара 2 -->
+          <div>
+            <img src="путь_к_картинке_товара2_модель2.jpg" alt="Товар 2" />
+            <h3>Название товара 4</h3>
+            <p>
+              Описание товара 2. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $120</p>
+            <button onclick="addToCart('Товар 2', 120)">Купить</button>
+          </div>
+          <!-- Добавьте другие карточки товаров по аналогии -->
+        </div>
+      </div>
+
+      <div class="car-model" id="maz">
+        <img
+          class="model-title"
+          onclick="toggleProductList('product-list-3')"
+          src="./assets/maz.png"
+          alt="maz"
+        />
+        <div class="product-list" id="product-list-3">
+          <!-- Карточка товара 1 -->
+          <div>
+            <img src="путь_к_картинке_товара1_модель2.jpg" alt="Товар 1" />
+            <h3>Название товара 5</h3>
+            <p>
+              Описание товара 1. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $100</p>
+            <button onclick="addToCart('Товар 1', 100)">Купить</button>
+          </div>
+          <!-- Карточка товара 2 -->
+          <div>
+            <img src="путь_к_картинке_товара2_модель2.jpg" alt="Товар 2" />
+            <h3>Название товара 6</h3>
+            <p>
+              Описание товара 2. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $120</p>
+            <button onclick="addToCart('Товар 2', 120)">Купить</button>
+          </div>
+          <!-- Добавьте другие карточки товаров по аналогии -->
+        </div>
+      </div>
+      <div class="car-model" id="uaz">
+        <img
+          class="model-title"
+          onclick="toggleProductList('product-list-4')"
+          src="./assets/uaz.png"
+          alt="uaz"
+        />
+        <div class="product-list" id="product-list-4">
+          <!-- Карточка товара 1 -->
+          <div>
+            <img src="путь_к_картинке_товара1_модель2.jpg" alt="Товар 1" />
+            <h3>Название товара 5</h3>
+            <p>
+              Описание товара 1. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $100</p>
+            <button onclick="addToCart('Товар 1', 100)">Купить</button>
+          </div>
+          <!-- Карточка товара 2 -->
+          <div>
+            <img src="путь_к_картинке_товара2_модель2.jpg" alt="Товар 2" />
+            <h3>Название товара 6</h3>
+            <p>
+              Описание товара 2. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $120</p>
+            <button onclick="addToCart('Товар 2', 120)">Купить</button>
+          </div>
+          <!-- Добавьте другие карточки товаров по аналогии -->
+        </div>
+      </div>
+      <div class="car-model" id="baw">
+        <img
+          class="model-title"
+          onclick="toggleProductList('product-list-5')"
+          src="./assets/baw.png"
+          alt="baw"
+        />
+        <div class="product-list" id="product-list-5">
+          <!-- Карточка товара 1 -->
+          <div>
+            <img src="путь_к_картинке_товара1_модель2.jpg" alt="Товар 1" />
+            <h3>Название товара 5</h3>
+            <p>
+              Описание товара 1. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $100</p>
+            <button onclick="addToCart('Товар 1', 100)">Купить</button>
+          </div>
+          <!-- Карточка товара 2 -->
+          <div>
+            <img src="путь_к_картинке_товара2_модель2.jpg" alt="Товар 2" />
+            <h3>Название товара 6</h3>
+            <p>
+              Описание товара 2. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $120</p>
+            <button onclick="addToCart('Товар 2', 120)">Купить</button>
+          </div>
+          <!-- Добавьте другие карточки товаров по аналогии -->
+        </div>
+      </div>
+
+      <div class="car-model" id="chevy">
+        <img
+          class="model-title"
+          onclick="toggleProductList('product-list-6')"
+          src="./assets/chevy.png"
+          alt="uaz"
+        />
+        <div class="product-list" id="product-list-6">
+          <!-- Карточка товара 1 -->
+          <div>
+            <img src="путь_к_картинке_товара1_модель2.jpg" alt="Товар 1" />
+            <h3>Название товара 5</h3>
+            <p>
+              Описание товара 1. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $100</p>
+            <button onclick="addToCart('Товар 1', 100)">Купить</button>
+          </div>
+          <!-- Карточка товара 2 -->
+          <div>
+            <img src="путь_к_картинке_товара2_модель2.jpg" alt="Товар 2" />
+            <h3>Название товара 6</h3>
+            <p>
+              Описание товара 2. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $120</p>
+            <button onclick="addToCart('Товар 2', 120)">Купить</button>
+          </div>
+          <!-- Добавьте другие карточки товаров по аналогии -->
+        </div>
+      </div>
+
+      <div class="car-model" id="citro">
+        <img
+          class="model-title"
+          onclick="toggleProductList('product-list-7')"
+          src="./assets/cictroen.png"
+          alt="uaz"
+        />
+        <div class="product-list" id="product-list-7">
+          <!-- Карточка товара 1 -->
+          <div>
+            <img src="путь_к_картинке_товара1_модель2.jpg" alt="Товар 1" />
+            <h3>Название товара 5</h3>
+            <p>
+              Описание товара 1. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $100</p>
+            <button onclick="addToCart('Товар 1', 100)">Купить</button>
+          </div>
+          <!-- Карточка товара 2 -->
+          <div>
+            <img src="путь_к_картинке_товара2_модель2.jpg" alt="Товар 2" />
+            <h3>Название товара 6</h3>
+            <p>
+              Описание товара 2. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $120</p>
+            <button onclick="addToCart('Товар 2', 120)">Купить</button>
+          </div>
+          <!-- Добавьте другие карточки товаров по аналогии -->
+        </div>
+      </div>
+
+      <div class="car-model" id="dodge">
+        <img
+          class="model-title"
+          onclick="toggleProductList('product-list-8')"
+          src="./assets/dodge.png"
+          alt="uaz"
+        />
+        <div class="product-list" id="product-list-8">
+          <!-- Карточка товара 1 -->
+          <div>
+            <img src="путь_к_картинке_товара1_модель2.jpg" alt="Товар 1" />
+            <h3>Название товара 5</h3>
+            <p>
+              Описание товара 1. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $100</p>
+            <button onclick="addToCart('Товар 1', 100)">Купить</button>
+          </div>
+          <!-- Карточка товара 2 -->
+          <div>
+            <img src="путь_к_картинке_товара2_модель2.jpg" alt="Товар 2" />
+            <h3>Название товара 6</h3>
+            <p>
+              Описание товара 2. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $120</p>
+            <button onclick="addToCart('Товар 2', 120)">Купить</button>
+          </div>
+          <!-- Добавьте другие карточки товаров по аналогии -->
+        </div>
+      </div>
+
+      <div class="car-model" id="fiat">
+        <img
+          class="model-title"
+          onclick="toggleProductList('product-list-9')"
+          src="./assets/fiat.png"
+          alt="uaz"
+        />
+        <div class="product-list" id="product-list-9">
+          <!-- Карточка товара 1 -->
+          <div>
+            <img src="путь_к_картинке_товара1_модель2.jpg" alt="Товар 1" />
+            <h3>Название товара 5</h3>
+            <p>
+              Описание товара 1. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $100</p>
+            <button onclick="addToCart('Товар 1', 100)">Купить</button>
+          </div>
+          <!-- Карточка товара 2 -->
+          <div>
+            <img src="путь_к_картинке_товара2_модель2.jpg" alt="Товар 2" />
+            <h3>Название товара 6</h3>
+            <p>
+              Описание товара 2. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $120</p>
+            <button onclick="addToCart('Товар 2', 120)">Купить</button>
+          </div>
+          <!-- Добавьте другие карточки товаров по аналогии -->
+        </div>
+      </div>
+
+      <div class="car-model" id="ford">
+        <img
+          class="model-title"
+          onclick="toggleProductList('product-list-10')"
+          src="./assets/ford.png"
+          alt="ford"
+        />
+        <div class="product-list" id="product-list-10">
+          <!-- Карточка товара 1 -->
+          <div>
+            <img src="путь_к_картинке_товара1_модель2.jpg" alt="Товар 1" />
+            <h3>Название товара 5</h3>
+            <p>
+              Описание товара 1. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $100</p>
+            <button onclick="addToCart('Товар 1', 100)">Купить</button>
+          </div>
+          <!-- Карточка товара 2 -->
+          <div>
+            <img src="путь_к_картинке_товара2_модель2.jpg" alt="Товар 2" />
+            <h3>Название товара 6</h3>
+            <p>
+              Описание товара 2. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $120</p>
+            <button onclick="addToCart('Товар 2', 120)">Купить</button>
+          </div>
+          <!-- Добавьте другие карточки товаров по аналогии -->
+        </div>
+      </div>
+
+      <div class="car-model" id="foton">
+        <img
+          class="model-title"
+          onclick="toggleProductList('product-list-11')"
+          src="./assets/foton.png"
+          alt="foton"
+        />
+        <div class="product-list" id="product-list-11">
+          <!-- Карточка товара 1 -->
+          <div>
+            <img src="путь_к_картинке_товара1_модель2.jpg" alt="Товар 1" />
+            <h3>Название товара 5</h3>
+            <p>
+              Описание товара 1. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $100</p>
+            <button onclick="addToCart('Товар 1', 100)">Купить</button>
+          </div>
+          <!-- Карточка товара 2 -->
+          <div>
+            <img src="путь_к_картинке_товара2_модель2.jpg" alt="Товар 2" />
+            <h3>Название товара 6</h3>
+            <p>
+              Описание товара 2. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $120</p>
+            <button onclick="addToCart('Товар 2', 120)">Купить</button>
+          </div>
+          <!-- Добавьте другие карточки товаров по аналогии -->
+        </div>
+      </div>
+
+      <div class="car-model" id="gmc">
+        <img
+          class="model-title"
+          onclick="toggleProductList('product-list-12')"
+          src="./assets/gmc.png"
+          alt="gmc"
+        />
+        <div class="product-list" id="product-list-12">
+          <!-- Карточка товара 1 -->
+          <div>
+            <img src="путь_к_картинке_товара1_модель2.jpg" alt="Товар 1" />
+            <h3>Название товара 5</h3>
+            <p>
+              Описание товара 1. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $100</p>
+            <button onclick="addToCart('Товар 1', 100)">Купить</button>
+          </div>
+          <!-- Карточка товара 2 -->
+          <div>
+            <img src="путь_к_картинке_товара2_модель2.jpg" alt="Товар 2" />
+            <h3>Название товара 6</h3>
+            <p>
+              Описание товара 2. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $120</p>
+            <button onclick="addToCart('Товар 2', 120)">Купить</button>
+          </div>
+          <!-- Добавьте другие карточки товаров по аналогии -->
+        </div>
+      </div>
+
+      <div class="car-model" id="hino">
+        <img
+          class="model-title"
+          onclick="toggleProductList('product-list-13')"
+          src="./assets/hino.png"
+          alt="hino"
+        />
+        <div class="product-list" id="product-list-13">
+          <!-- Карточка товара 1 -->
+          <div>
+            <img src="путь_к_картинке_товара1_модель2.jpg" alt="Товар 1" />
+            <h3>Название товара 5</h3>
+            <p>
+              Описание товара 1. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $100</p>
+            <button onclick="addToCart('Товар 1', 100)">Купить</button>
+          </div>
+          <!-- Карточка товара 2 -->
+          <div>
+            <img src="путь_к_картинке_товара2_модель2.jpg" alt="Товар 2" />
+            <h3>Название товара 6</h3>
+            <p>
+              Описание товара 2. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $120</p>
+            <button onclick="addToCart('Товар 2', 120)">Купить</button>
+          </div>
+          <!-- Добавьте другие карточки товаров по аналогии -->
+        </div>
+      </div>
+
+      <div class="car-model" id="hyundai">
+        <img
+          class="model-title"
+          onclick="toggleProductList('product-list-14')"
+          src="./assets/hyundai.png"
+          alt="hyundai"
+        />
+        <div class="product-list" id="product-list-14">
+          <!-- Карточка товара 1 -->
+          <div>
+            <img src="путь_к_картинке_товара1_модель2.jpg" alt="Товар 1" />
+            <h3>Название товара 5</h3>
+            <p>
+              Описание товара 1. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $100</p>
+            <button onclick="addToCart('Товар 1', 100)">Купить</button>
+          </div>
+          <!-- Карточка товара 2 -->
+          <div>
+            <img src="путь_к_картинке_товара2_модель2.jpg" alt="Товар 2" />
+            <h3>Название товара 6</h3>
+            <p>
+              Описание товара 2. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $120</p>
+            <button onclick="addToCart('Товар 2', 120)">Купить</button>
+          </div>
+          <!-- Добавьте другие карточки товаров по аналогии -->
+        </div>
+      </div>
+
+      <div class="car-model" id="isuzu">
+        <img
+          class="model-title"
+          onclick="toggleProductList('product-list-15')"
+          src="./assets/isuzu.png"
+          alt="isuzu"
+        />
+        <div class="product-list" id="product-list-15">
+          <!-- Карточка товара 1 -->
+          <div>
+            <img src="путь_к_картинке_товара1_модель2.jpg" alt="Товар 1" />
+            <h3>Название товара 5</h3>
+            <p>
+              Описание товара 1. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $100</p>
+            <button onclick="addToCart('Товар 1', 100)">Купить</button>
+          </div>
+          <!-- Карточка товара 2 -->
+          <div>
+            <img src="путь_к_картинке_товара2_модель2.jpg" alt="Товар 2" />
+            <h3>Название товара 6</h3>
+            <p>
+              Описание товара 2. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $120</p>
+            <button onclick="addToCart('Товар 2', 120)">Купить</button>
+          </div>
+          <!-- Добавьте другие карточки товаров по аналогии -->
+        </div>
+      </div>
+
+      <div class="car-model" id="iveco">
+        <img
+          class="model-title"
+          onclick="toggleProductList('product-list-16')"
+          src="./assets/iveco.png"
+          alt="iveco"
+        />
+        <div class="product-list" id="product-list-16">
+          <!-- Карточка товара 1 -->
+          <div>
+            <img src="путь_к_картинке_товара1_модель2.jpg" alt="Товар 1" />
+            <h3>Название товара 5</h3>
+            <p>
+              Описание товара 1. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $100</p>
+            <button onclick="addToCart('Товар 1', 100)">Купить</button>
+          </div>
+          <!-- Карточка товара 2 -->
+          <div>
+            <img src="путь_к_картинке_товара2_модель2.jpg" alt="Товар 2" />
+            <h3>Название товара 6</h3>
+            <p>
+              Описание товара 2. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $120</p>
+            <button onclick="addToCart('Товар 2', 120)">Купить</button>
+          </div>
+          <!-- Добавьте другие карточки товаров по аналогии -->
+        </div>
+      </div>
+
+      <div class="car-model" id="kia">
+        <img
+          class="model-title"
+          onclick="toggleProductList('product-list-17')"
+          src="./assets/kia.png"
+          alt="kia"
+        />
+        <div class="product-list" id="product-list-17">
+          <!-- Карточка товара 1 -->
+          <div>
+            <img src="путь_к_картинке_товара1_модель2.jpg" alt="Товар 1" />
+            <h3>Название товара 5</h3>
+            <p>
+              Описание товара 1. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $100</p>
+            <button onclick="addToCart('Товар 1', 100)">Купить</button>
+          </div>
+          <!-- Карточка товара 2 -->
+          <div>
+            <img src="путь_к_картинке_товара2_модель2.jpg" alt="Товар 2" />
+            <h3>Название товара 6</h3>
+            <p>
+              Описание товара 2. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $120</p>
+            <button onclick="addToCart('Товар 2', 120)">Купить</button>
+          </div>
+          <!-- Добавьте другие карточки товаров по аналогии -->
+        </div>
+      </div>
+
+      <div class="car-model" id="ldv">
+        <img
+          class="model-title"
+          onclick="toggleProductList('product-list-18')"
+          src="./assets/ldv.png"
+          alt="ldv"
+        />
+        <div class="product-list" id="product-list-18">
+          <!-- Карточка товара 1 -->
+          <div>
+            <img src="путь_к_картинке_товара1_модель2.jpg" alt="Товар 1" />
+            <h3>Название товара 5</h3>
+            <p>
+              Описание товара 1. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $100</p>
+            <button onclick="addToCart('Товар 1', 100)">Купить</button>
+          </div>
+          <!-- Карточка товара 2 -->
+          <div>
+            <img src="путь_к_картинке_товара2_модель2.jpg" alt="Товар 2" />
+            <h3>Название товара 6</h3>
+            <p>
+              Описание товара 2. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $120</p>
+            <button onclick="addToCart('Товар 2', 120)">Купить</button>
+          </div>
+          <!-- Добавьте другие карточки товаров по аналогии -->
+        </div>
+      </div>
+      <div class="car-model" id="man">
+        <img
+          class="model-title"
+          onclick="toggleProductList('product-list-19')"
+          src="./assets/man.png"
+          alt="man"
+        />
+        <div class="product-list" id="product-list-19">
+          <!-- Карточка товара 1 -->
+          <div>
+            <img src="путь_к_картинке_товара1_модель2.jpg" alt="Товар 1" />
+            <h3>Название товара 5</h3>
+            <p>
+              Описание товара 1. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $100</p>
+            <button onclick="addToCart('Товар 1', 100)">Купить</button>
+          </div>
+          <!-- Карточка товара 2 -->
+          <div>
+            <img src="путь_к_картинке_товара2_модель2.jpg" alt="Товар 2" />
+            <h3>Название товара 6</h3>
+            <p>
+              Описание товара 2. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $120</p>
+            <button onclick="addToCart('Товар 2', 120)">Купить</button>
+          </div>
+          <!-- Добавьте другие карточки товаров по аналогии -->
+        </div>
+      </div>
+
+      <div class="car-model" id="mazda">
+        <img
+          class="model-title"
+          onclick="toggleProductList('product-list-20')"
+          src="./assets/mazda.png"
+          alt="mazda"
+        />
+        <div class="product-list" id="product-list-20">
+          <!-- Карточка товара 1 -->
+          <div>
+            <img src="путь_к_картинке_товара1_модель2.jpg" alt="Товар 1" />
+            <h3>Название товара 5</h3>
+            <p>
+              Описание товара 1. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $100</p>
+            <button onclick="addToCart('Товар 1', 100)">Купить</button>
+          </div>
+          <!-- Карточка товара 2 -->
+          <div>
+            <img src="путь_к_картинке_товара2_модель2.jpg" alt="Товар 2" />
+            <h3>Название товара 6</h3>
+            <p>
+              Описание товара 2. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $120</p>
+            <button onclick="addToCart('Товар 2', 120)">Купить</button>
+          </div>
+          <!-- Добавьте другие карточки товаров по аналогии -->
+        </div>
+      </div>
+
+      <div class="car-model" id="mers">
+        <img
+          class="model-title"
+          onclick="toggleProductList('product-list-21')"
+          src="./assets/mb.png"
+          alt="mers"
+        />
+        <div class="product-list" id="product-list-21">
+          <!-- Карточка товара 1 -->
+          <div>
+            <img src="путь_к_картинке_товара1_модель2.jpg" alt="Товар 1" />
+            <h3>Название товара 5</h3>
+            <p>
+              Описание товара 1. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $100</p>
+            <button onclick="addToCart('Товар 1', 100)">Купить</button>
+          </div>
+          <!-- Карточка товара 2 -->
+          <div>
+            <img src="путь_к_картинке_товара2_модель2.jpg" alt="Товар 2" />
+            <h3>Название товара 6</h3>
+            <p>
+              Описание товара 2. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $120</p>
+            <button onclick="addToCart('Товар 2', 120)">Купить</button>
+          </div>
+          <!-- Добавьте другие карточки товаров по аналогии -->
+        </div>
+      </div>
+
+      <div class="car-model" id="mitsu">
+        <img
+          class="model-title"
+          onclick="toggleProductList('product-list-22')"
+          src="./assets/mitsu.png"
+          alt="mitsu"
+        />
+        <div class="product-list" id="product-list-22">
+          <!-- Карточка товара 1 -->
+          <div>
+            <img src="путь_к_картинке_товара1_модель2.jpg" alt="Товар 1" />
+            <h3>Название товара 5</h3>
+            <p>
+              Описание товара 1. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $100</p>
+            <button onclick="addToCart('Товар 1', 100)">Купить</button>
+          </div>
+          <!-- Карточка товара 2 -->
+          <div>
+            <img src="путь_к_картинке_товара2_модель2.jpg" alt="Товар 2" />
+            <h3>Название товара 6</h3>
+            <p>
+              Описание товара 2. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $120</p>
+            <button onclick="addToCart('Товар 2', 120)">Купить</button>
+          </div>
+          <!-- Добавьте другие карточки товаров по аналогии -->
+        </div>
+      </div>
+
+      <div class="car-model" id="naveco">
+        <img
+          class="model-title"
+          onclick="toggleProductList('product-list-23')"
+          src="./assets/naveco.png"
+          alt="naveco"
+        />
+        <div class="product-list" id="product-list-23">
+          <!-- Карточка товара 1 -->
+          <div>
+            <img src="путь_к_картинке_товара1_модель2.jpg" alt="Товар 1" />
+            <h3>Название товара 5</h3>
+            <p>
+              Описание товара 1. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $100</p>
+            <button onclick="addToCart('Товар 1', 100)">Купить</button>
+          </div>
+          <!-- Карточка товара 2 -->
+          <div>
+            <img src="путь_к_картинке_товара2_модель2.jpg" alt="Товар 2" />
+            <h3>Название товара 6</h3>
+            <p>
+              Описание товара 2. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $120</p>
+            <button onclick="addToCart('Товар 2', 120)">Купить</button>
+          </div>
+          <!-- Добавьте другие карточки товаров по аналогии -->
+        </div>
+      </div>
+
+      <div class="car-model" id="nissan">
+        <img
+          class="model-title"
+          onclick="toggleProductList('product-list-24')"
+          src="./assets/nissan.png"
+          alt="nissan"
+        />
+        <div class="product-list" id="product-list-24">
+          <!-- Карточка товара 1 -->
+          <div>
+            <img src="путь_к_картинке_товара1_модель2.jpg" alt="Товар 1" />
+            <h3>Название товара 5</h3>
+            <p>
+              Описание товара 1. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $100</p>
+            <button onclick="addToCart('Товар 1', 100)">Купить</button>
+          </div>
+          <!-- Карточка товара 2 -->
+          <div>
+            <img src="путь_к_картинке_товара2_модель2.jpg" alt="Товар 2" />
+            <h3>Название товара 6</h3>
+            <p>
+              Описание товара 2. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $120</p>
+            <button onclick="addToCart('Товар 2', 120)">Купить</button>
+          </div>
+          <!-- Добавьте другие карточки товаров по аналогии -->
+        </div>
+      </div>
+
+      <div class="car-model" id="opel">
+        <img
+          class="model-title"
+          onclick="toggleProductList('product-list-25')"
+          src="./assets/opel.png"
+          alt="opel"
+        />
+        <div class="product-list" id="product-list-25">
+          <!-- Карточка товара 1 -->
+          <div>
+            <img src="путь_к_картинке_товара1_модель2.jpg" alt="Товар 1" />
+            <h3>Название товара 5</h3>
+            <p>
+              Описание товара 1. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $100</p>
+            <button onclick="addToCart('Товар 1', 100)">Купить</button>
+          </div>
+          <!-- Карточка товара 2 -->
+          <div>
+            <img src="путь_к_картинке_товара2_модель2.jpg" alt="Товар 2" />
+            <h3>Название товара 6</h3>
+            <p>
+              Описание товара 2. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $120</p>
+            <button onclick="addToCart('Товар 2', 120)">Купить</button>
+          </div>
+          <!-- Добавьте другие карточки товаров по аналогии -->
+        </div>
+      </div>
+      <div class="car-model" id="peugeot">
+        <img
+          class="model-title"
+          onclick="toggleProductList('product-list-26')"
+          src="./assets/peugeot.png"
+          alt="peugeot"
+        />
+        <div class="product-list" id="product-list-26">
+          <!-- Карточка товара 1 -->
+          <div>
+            <img src="путь_к_картинке_товара1_модель2.jpg" alt="Товар 1" />
+            <h3>Название товара 5</h3>
+            <p>
+              Описание товара 1. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $100</p>
+            <button onclick="addToCart('Товар 1', 100)">Купить</button>
+          </div>
+          <!-- Карточка товара 2 -->
+          <div>
+            <img src="путь_к_картинке_товара2_модель2.jpg" alt="Товар 2" />
+            <h3>Название товара 6</h3>
+            <p>
+              Описание товара 2. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $120</p>
+            <button onclick="addToCart('Товар 2', 120)">Купить</button>
+          </div>
+          <!-- Добавьте другие карточки товаров по аналогии -->
+        </div>
+      </div>
+      <div class="car-model" id="renault">
+        <img
+          class="model-title"
+          onclick="toggleProductList('product-list-27')"
+          src="./assets/renault1.png"
+          alt="renault"
+        />
+        <div class="product-list" id="product-list-27">
+          <!-- Карточка товара 1 -->
+          <div>
+            <img src="путь_к_картинке_товара1_модель2.jpg" alt="Товар 1" />
+            <h3>Название товара 5</h3>
+            <p>
+              Описание товара 1. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $100</p>
+            <button onclick="addToCart('Товар 1', 100)">Купить</button>
+          </div>
+          <!-- Карточка товара 2 -->
+          <div>
+            <img src="путь_к_картинке_товара2_модель2.jpg" alt="Товар 2" />
+            <h3>Название товара 6</h3>
+            <p>
+              Описание товара 2. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $120</p>
+            <button onclick="addToCart('Товар 2', 120)">Купить</button>
+          </div>
+          <!-- Добавьте другие карточки товаров по аналогии -->
+        </div>
+      </div>
+      <div class="car-model" id="tata">
+        <img
+          class="model-title"
+          onclick="toggleProductList('product-list-28')"
+          src="./assets/tata.png"
+          alt="tata"
+        />
+        <div class="product-list" id="product-list-28">
+          <!-- Карточка товара 1 -->
+          <div>
+            <img src="путь_к_картинке_товара1_модель2.jpg" alt="Товар 1" />
+            <h3>Название товара 5</h3>
+            <p>
+              Описание товара 1. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $100</p>
+            <button onclick="addToCart('Товар 1', 100)">Купить</button>
+          </div>
+          <!-- Карточка товара 2 -->
+          <div>
+            <img src="путь_к_картинке_товара2_модель2.jpg" alt="Товар 2" />
+            <h3>Название товара 6</h3>
+            <p>
+              Описание товара 2. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $120</p>
+            <button onclick="addToCart('Товар 2', 120)">Купить</button>
+          </div>
+          <!-- Добавьте другие карточки товаров по аналогии -->
+        </div>
+      </div>
+      <div class="car-model" id="toyota">
+        <img
+          class="model-title"
+          onclick="toggleProductList('product-list-29')"
+          src="./assets/toyota.png"
+          alt="toyota"
+        />
+        <div class="product-list" id="product-list-29">
+          <!-- Карточка товара 1 -->
+          <div>
+            <img src="путь_к_картинке_товара1_модель2.jpg" alt="Товар 1" />
+            <h3>Название товара 5</h3>
+            <p>
+              Описание товара 1. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $100</p>
+            <button onclick="addToCart('Товар 1', 100)">Купить</button>
+          </div>
+          <!-- Карточка товара 2 -->
+          <div>
+            <img src="путь_к_картинке_товара2_модель2.jpg" alt="Товар 2" />
+            <h3>Название товара 6</h3>
+            <p>
+              Описание товара 2. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $120</p>
+            <button onclick="addToCart('Товар 2', 120)">Купить</button>
+          </div>
+          <!-- Добавьте другие карточки товаров по аналогии -->
+        </div>
+      </div>
+      <div class="car-model" id="vw">
+        <img
+          class="model-title"
+          onclick="toggleProductList('product-list-30')"
+          src="./assets/vw.png"
+          alt="vw"
+        />
+        <div class="product-list" id="product-list-30">
+          <!-- Карточка товара 1 -->
+          <div>
+            <img src="путь_к_картинке_товара1_модель2.jpg" alt="Товар 1" />
+            <h3>Название товара 5</h3>
+            <p>
+              Описание товара 1. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $100</p>
+            <button onclick="addToCart('Товар 1', 100)">Купить</button>
+          </div>
+          <!-- Карточка товара 2 -->
+          <div>
+            <img src="путь_к_картинке_товара2_модель2.jpg" alt="Товар 2" />
+            <h3>Название товара 6</h3>
+            <p>
+              Описание товара 2. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $120</p>
+            <button onclick="addToCart('Товар 2', 120)">Купить</button>
+          </div>
+          <!-- Добавьте другие карточки товаров по аналогии -->
+        </div>
+      </div>
+      <div class="car-model" id="jac">
+        <img
+          class="model-title"
+          onclick="toggleProductList('product-list-31')"
+          src="./assets/jac.png"
+          alt="jac"
+        />
+        <div class="product-list" id="product-list-31">
+          <!-- Карточка товара 1 -->
+          <div>
+            <img src="путь_к_картинке_товара1_модель2.jpg" alt="Товар 1" />
+            <h3>Название товара 5</h3>
+            <p>
+              Описание товара 1. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $100</p>
+            <button onclick="addToCart('Товар 1', 100)">Купить</button>
+          </div>
+          <!-- Карточка товара 2 -->
+          <div>
+            <img src="путь_к_картинке_товара2_модель2.jpg" alt="Товар 2" />
+            <h3>Название товара 6</h3>
+            <p>
+              Описание товара 2. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $120</p>
+            <button onclick="addToCart('Товар 2', 120)">Купить</button>
+          </div>
+          <!-- Добавьте другие карточки товаров по аналогии -->
+        </div>
+      </div>
+      <div class="car-model" id="lada">
+        <img
+          class="model-title"
+          onclick="toggleProductList('product-list-32')"
+          src="./assets/-lada.png"
+          alt="lada"
+        />
+        <div class="product-list" id="product-list-32">
+          <!-- Карточка товара 1 -->
+          <div>
+            <img src="путь_к_картинке_товара1_модель2.jpg" alt="Товар 1" />
+            <h3>Название товара 5</h3>
+            <p>
+              Описание товара 1. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $100</p>
+            <button onclick="addToCart('Товар 1', 100)">Купить</button>
+          </div>
+          <!-- Карточка товара 2 -->
+          <div>
+            <img src="путь_к_картинке_товара2_модель2.jpg" alt="Товар 2" />
+            <h3>Название товара 6</h3>
+            <p>
+              Описание товара 2. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <p>Цена: $120</p>
+            <button onclick="addToCart('Товар 2', 120)">Купить</button>
+          </div>
+          <!-- Добавьте другие карточки товаров по аналогии -->
+        </div>
+      </div>
+      <!-- Повторите блок с моделью и карточками для каждой модели -->
+    </section>
+
+    <!-- Модальное окно -->
+    <div id="modal">
+      <div id="modal-content">
+        <span id="close-modal" onclick="closeModal()">&times;</span>
+        <h2>Корзина</h2>
+        <div id="cart-details"></div>
+        <p>Итого: $<span id="cart-total">0.00</span></p>
+        <button onclick="closeModal()">Закрыть корзину</button>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2023 Продажа пневмоподвесок. Все права защищены.</p>
+    </footer>
+
+    <script>
+      let cartCount = 0;
+      let cartTotal = 0;
+      let cartItems = [];
+
+      // Загрузка данных корзины из localStorage
+      if (localStorage.getItem('cartItems')) {
+        cartItems = JSON.parse(localStorage.getItem('cartItems'));
+        updateCartDisplay();
+      }
+
+      function addToCart(itemName, itemPrice) {
+        cartCount++;
+        cartTotal += itemPrice;
+
+        const existingItem = cartItems.find((item) => item.name === itemName);
+        if (existingItem) {
+          existingItem.quantity++;
+        } else {
+          cartItems.push({ name: itemName, price: itemPrice, quantity: 1 });
+        }
+
+        // Сохранение данных корзины в localStorage
+        localStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+        updateCartDisplay();
+      }
+
+      function removeFromCart(itemName) {
+        const itemIndex = cartItems.findIndex((item) => item.name === itemName);
+        if (itemIndex !== -1) {
+          const removedItem = cartItems.splice(itemIndex, 1)[0];
+          cartCount -= removedItem.quantity;
+          cartTotal -= removedItem.price * removedItem.quantity;
+        }
+
+        // Сохранение данных корзины в localStorage
+        localStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+        updateCartDisplay();
+        displayCartDetails();
+      }
+
+      function updateCartDisplay() {
+        document.getElementById(
+          'cart-count'
+        ).innerText = `${cartCount} товаров`;
+      }
+
+      function openModal() {
+        document.getElementById('modal').style.display = 'flex';
+        displayCartDetails();
+      }
+
+      function closeModal() {
+        document.getElementById('modal').style.display = 'none';
+      }
+
+      function displayCartDetails() {
+        const cartDetailsContainer = document.getElementById('cart-details');
+        cartDetailsContainer.innerHTML = ''; // Очищаем содержимое контейнера перед обновлением
+
+        for (let i = 0; i < cartItems.length; i++) {
+          const cartItemContainer = document.createElement('div');
+          cartItemContainer.classList.add('cart-item');
+
+          const itemName = document.createElement('span');
+          itemName.textContent = `${cartItems[i].name} - $${cartItems[i].price} x ${cartItems[i].quantity}`;
+
+          const removeButton = document.createElement('button');
+          removeButton.textContent = 'Удалить';
+          removeButton.addEventListener('click', () =>
+            removeFromCart(cartItems[i].name)
+          );
+
+          cartItemContainer.appendChild(itemName);
+          cartItemContainer.appendChild(removeButton);
+          cartDetailsContainer.appendChild(cartItemContainer);
+        }
+
+        document.getElementById('cart-total').innerText = cartTotal.toFixed(2);
+      }
+
+      function toggleProductList(listId) {
+        const productList = document.getElementById(listId);
+        productList.style.display =
+          productList.style.display === 'none' ? 'block' : 'none';
+      }
+    </script>
+  </body>
+</html>
